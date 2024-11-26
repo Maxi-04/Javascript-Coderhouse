@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="home.css">
+    <div>
+       <h1 id="miCuenta">
+
+       </h1>
+    </div>
+    <P>Prendas Disponibles</P>
+    <ul class="list2" id="subitemList">
+        <li class="item2">Ropa
+            <ul class="sublist">
+                <li class="subitem">Remera - $10000</li>
+                <li class="subitem">Short - $8000</li>
+                <li class="subitem">Jean - $20000</li>
+                <li class="subitem">Pantalon - $20000</li>
+                <li class="subitem">Buzo - $30000</li>
+                <li class="subitem">Campera - $50000</li>
+                <li class="subitem">Vestido - $25000</li>
+            </ul>    
+        </li>
+        <li class="item2">Calzado
+            <ul class="sublist">
+                <li class="subitem">Zapatos - $50000</li>
+                <li class="subitem">Zapatillas - $50000</li>
+                <li class="subitem">Ojotas - $40000</li>
+            </ul>
+        </li>
+        <li class="item2">Accesorios
+            <ul class="sublist">
+                <li class="subitem">Gorro - $5000</li>
+                <li class="subitem">Gorra - $5000</li>
+                <li class="subitem">Mochila - $50000</li>
+                <li class="subitem">Pulsera - $2500</li>
+            </ul>
+        </li>
+    </ul>    
+    <p>¿Que prenda quieres guardar?</p>
+    <input type="text" id="prenda" placeholder="Ingresar Prenda">
+    <input type="button" value="Guardar Prenda" id="boton">
+    <P>Productos Guardados</P>
+    <div id="contenedor">
+        <ul id="lista"></ul>
+    </div>
+    <p>Precio Total</p>
+    <div>
+        <ul id="precioTotal">
+
+        </ul>
+    </div>
+    <div id="toast-container"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+    
+</body>
+</html>

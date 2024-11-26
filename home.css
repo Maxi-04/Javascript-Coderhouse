@@ -1,0 +1,184 @@
+/* Contenedor principal */
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Barra de entrada de texto */
+#prenda {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Título de productos guardados */
+#contenedor p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 15px 0 5px;
+    text-align: left;
+    width: 100%;
+    color: #333;
+}
+
+/* Lista de productos agregados */
+#lista {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Botones */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Botón específico de eliminar en la lista */
+#lista li button {
+    padding: 4px 8px;
+    font-size: 0.9em;
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#lista li button:hover {
+    background-color: #c82333;
+}
+
+/* Precio total */
+#precioTotal {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Extra */
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+.square {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: #ff4f4f;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 150px;
+    color: #ffffff;
+    user-select: none;
+}
+
+.color {
+    background-color: #5a5ada;
+}
+
+#boxCtn {
+    margin: 20px 0;
+}
+
+.sublist {
+    display: none;
+    margin: 10px;
+    text-align: left;
+    list-style: disc;
+}
+.list2 {
+    padding: 0;
+    width: 250px;
+    border: 1px solid #000;
+}
+.item2 {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+
+.propSquare{
+    line-height: 40px;
+}
+.bigBox {
+    width: 400px;
+    padding: 20px;
+    background-color: #5a5ada;
+}
+.par{
+    background-color: #000;
+}
+
+.list {
+    padding: 0;
+    width: 200px;
+    border: 1px solid #000;
+}
+
+.list li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.passRecomendation {
+    width: 300px;
+    font-size: 12px;
+    color: #ff4f4f;
+}
+/* Contenedor de las notificaciones */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
