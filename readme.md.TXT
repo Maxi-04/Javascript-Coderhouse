@@ -1,0 +1,1 @@
+La idea seria que el usuario ingrese a "login.html" y tenga que registrarse para poder ingresar a la pagina principal (home.html)
