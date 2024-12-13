@@ -182,3 +182,67 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+
+
+/* Estilos para el contenedor de frases */
+
+.contenedor {
+    display: flex; /* Utiliza Flexbox para organizar las frases */
+    flex-direction: column; /* Apila las frases verticalmente */
+    justify-content: center; /* Centra las frases verticalmente */
+    align-items: center; /* Centra las frases horizontalmente */
+    gap: 15px; /* Espacio entre cada frase */
+    padding: 20px; /* Espaciado interno del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    background-color: #f0f8ff; /* Color de fondo claro y agradable */
+    border: 1px solid #dcdcdc; /* Borde sutil alrededor del contenedor */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#resultado {
+    font-size: 1.1rem; /* Tamaño de fuente moderado */
+    font-weight: 500; /* Peso de fuente medio */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno para cada frase */
+    background-color: #ffffff; /* Fondo blanco para resaltar cada frase */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+#resultado:hover {
+    background-color: #e6f7ff; /* Cambia el fondo al pasar el ratón */
+    transform: translateY(-5px); /* Eleva la frase ligeramente al pasar el ratón */
+}
+
+
+/* Estilos para un botón simple */
+
+#jsonBtn {
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: 600; /* Peso de la fuente */
+    color: #ffffff; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Muestra un puntero de mano al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+#jsonBtn:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
+#jsonBtn:active {
+    background-color: #003f7f; /* Color aún más oscuro al hacer clic */
+    transform: scale(0.95); /* Reduce ligeramente el botón al hacer clic */
+}

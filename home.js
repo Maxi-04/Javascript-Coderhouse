@@ -2,10 +2,10 @@
 const prendasDisponibles = [
     { nombre: "remera", precio: 10000 },
     { nombre: "jean", precio: 20000 },
-    { nombre: "short", precio: 5000 },
+    { nombre: "short", precio: 8000 },
     { nombre: "buzo", precio: 30000 },
     { nombre: "campera", precio: 50000 },
-    { nombre: "ojotas", precio: 40000},
+    { nombre: "ojotas", precio: 30000},
     { nombre: "zapatos", precio: 50000 },
     { nombre: "zapatillas", precio: 50000 },
     { nombre: "pantalon", precio: 20000 },
@@ -15,6 +15,26 @@ const prendasDisponibles = [
     { nombre: "mochila", precio: 50000},
     { nombre: "pulsera", precio: 2500}
 ];
+
+
+document.getElementById('jsonBtn').addEventListener('click', cargarJSON)
+
+function cargarJSON () {
+    fetch ('productos.json')
+    .then (function (res) {
+        return res.json ()
+    })
+    .then (function (data) {
+        let html = ''
+        data.forEach(function (producto) {
+            html += `
+                <li>${producto.nombre} ${producto.precio}</li>
+            `
+        })
+        document.getElementById('resultado').innerHTML = html
+    })
+}
+
 
 // Valores Iniciales
 let productos = [];
@@ -145,15 +165,3 @@ function mostrarTotal() {
         }
     }
 }
-
-// Mostrar / Ocultar Prendas
-subitemList.addEventListener('click', (event) => {
-    //Objeto de evento
-    if(event.target.className === 'item2'){
-        if(event.target.children[0].style.display === "block"){
-            event.target.children[0].style.display = "none";
-        } else {
-            event.target.children[0].style.display = "block";
-        }
-    }
-});

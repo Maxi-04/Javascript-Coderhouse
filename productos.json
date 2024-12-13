@@ -1,0 +1,59 @@
+[
+    {
+        "nombre" : "Remera",
+        "precio" : "$10000"
+    },
+    {
+        "nombre" : "Short",
+        "precio" : "$8000"
+    },
+    {
+        "nombre" : "Jean",
+        "precio" : "$20000"
+    },
+    {
+        "nombre" : "Pantalon",
+        "precio" : "$20000"
+    },
+    {
+        "nombre" : "Buzo",
+        "precio" : "$30000"
+    },
+    {
+        "nombre" : "Campera",
+        "precio" : "$50000"
+    },
+    {
+        "nombre" : "Vestido",
+        "precio" : "$25000"
+    },
+    {
+        "nombre" : "Zapatos",
+        "precio" : "$50000"
+    },
+    {
+        "nombre" : "Zapatillas",
+        "precio" : "$50000"
+    },
+    {
+        "nombre" : "Ojotas",
+        "precio" : "$30000"
+    },
+    {
+        "nombre" : "Gorro",
+        "precio" : "$5000"
+    },
+    {
+        "nombre" : "Gorra",
+        "precio" : "$5000"
+    },
+    {
+        "nombre" : "Mochila",
+        "precio" : "$50000"
+    },
+    {
+        "nombre" : "Pulsera",
+        "precio" : "$2500"
+    }
+
+]
